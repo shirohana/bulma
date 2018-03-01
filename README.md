@@ -1,95 +1,45 @@
-# [Bulma](https://bulma.io)
+# Bulma Stylus
 
-Bulma is a **modern CSS framework** based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes).
+> Pure Stylus implementation of [Bulma.css](https://github.com/jgthms/bulma)
 
-[![npm](https://img.shields.io/npm/v/bulma.svg)](https://www.npmjs.com/package/bulma)
-[![npm](https://img.shields.io/npm/dm/bulma.svg)](https://www.npmjs.com/package/bulma)
-[![Join the chat at https://gitter.im/jgthms/bulma](https://badges.gitter.im/jgthms/bulma.svg)](https://gitter.im/jgthms/bulma)
-[![Build Status](https://travis-ci.org/jgthms/bulma.svg?branch=master)](https://travis-ci.org/jgthms/bulma)
+#### Notice! This package is used to integrate Bulma with Stylus, it does NOT includes builded css files.
 
-<a href="https://bulma.io"><img src="https://raw.githubusercontent.com/jgthms/bulma/master/docs/images/bulma-banner.png" alt="Bulma: a Flexbox CSS framework" style="max-width:100%;" width="600" height="315"></a>
+![Bulma-Stylus banner](docs/images/bulma-stylus-banner.png)
 
-## Quick install
+## Install
 
-Bulma is constantly in development! Try it out now:
+_This package version is synchronous with Bulma, every difference between the same version of Bulma
+will be logged in [Changelog](CHANGELOG.md)._
 
 ### NPM
 
 ```sh
-npm install bulma
+npm install @shirohana/bulma-stylus
 ```
-**or**
+
+__or__
 
 ### Yarn
 
 ```sh
-yarn add bulma
+yarn add @shirohana/bulma-stylus
 ```
 
-### Bower
+## Links
 
-```sh
-bower install bulma
-```
+- [📚 Offical documentation](https://bulma.io/documentation/overview/start)
+- [📜 Changelog](CHANGELOG.md)
 
-### CDN
+## Difference between Bulma (module)
 
-[https://cdnjs.com/libraries/bulma](https://cdnjs.com/libraries/bulma)
+- Replace `lighten()` function with `sass-lighten()` which implements sass-like `lighten`
+- Replace `darken()` function with `sass-darken()` which implements sass-like `darken`
+- Remove `powerNumber()` function (Use Stylus [`exponent-operator`][stylus-operator-exponent] instead)
+- Remove `colorLuminance()` function (Use Stylus built-in function [`luminosity()`][stylus-bifs-luminosity] instead)
 
-Feel free to raise an issue or submit a pull request.
+[stylus-operator-exponent]: http://stylus-lang.com/docs/operators.html#exponent-
+[stylus-bifs-luminosity]: http://stylus-lang.com/docs/bifs.html#luminositycolor
 
-## CSS only
+## Inherited copyright and license
 
-Bulma is a **CSS** framework. As such, the sole output is a single CSS file: [bulma.css](https://github.com/jgthms/bulma/blob/master/css/bulma.css)
-
-You can either use that file, "out of the box", or download the Sass source files to customize the [variables](https://bulma.io/documentation/overview/variables/).
-
-There is **no** JavaScript included. People generally want to use their own JS implementation (and usually already have one). Bulma can be considered "environment agnostic": it's just the style layer on top of the logic.
-
-## Browser Support
-
-Bulma uses [autoprefixer](https://github.com/postcss/autoprefixer) to make (most) Flexbox features compatible with earlier browser versions. According to [Can I use](https://caniuse.com/#feat=flexbox), Bulma is compatible with **recent** versions of:
-
-* Chrome
-* Edge
-* Firefox
-* Opera
-* Safari
-
-Internet Explorer (10+) is only partially supported.
-
-## Documentation
-
-The documentation resides in the [docs](docs) directory, and is built with the Ruby-based [Jekyll](https://jekyllrb.com/) tool.
-
-Browse the [online documentation here.](https://bulma.io/documentation/overview/start/)
-
-## Related projects
-
-| Project                                                                            | Description                                                        |
-|------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [Bulma with Attribute Modules](https://github.com/j5bot/bulma-attribute-selectors) | Adds support for attribute-based selectors.                        |
-| [Bulma with Rails](https://github.com/joshuajansen/bulma-rails)                    | Integrates Bulma with the rails asset pipeline                     |
-| [Vue Admin](https://github.com/vue-bulma/vue-admin)                                | Vue Admin framework powered by Bulma                               |
-| [Bulmaswatch](https://github.com/jenil/bulmaswatch)                                | Free themes for Bulma                                              |
-| [Goldfish](https://github.com/Caiyeon/goldfish)                                    | Vault UI with Bulma, Golang, and Vue Admin                         |
-| [ember-bulma](https://github.com/open-tux/ember-bulma)                             | Ember addon providing a collection of UI components for Bulma      |
-| [Bloomer](https://bloomer.js.org)                                                  | A set of React components for Bulma                                |
-| [Re-bulma](https://github.com/bokuweb/re-bulma)                                    | Bulma components build with React                                  |
-| [React-bulma](https://github.com/kulakowka/react-bulma)                            | React.js components for Bulma                                      |
-| [Buefy](https://buefy.github.io)                                                   | Lightweight UI components for Vue.js based on Bulma                |
-| [vue-bulma-components](https://github.com/vouill/vue-bulma-components)             | Bulma components for Vue.js with straightforward syntax            |
-| [BulmaJS](https://github.com/VizuaaLOG/BulmaJS)                                    | Javascript integration for Bulma. Written in ES6 with a data-* API |
-| [Bulma.styl](https://github.com/log1x/bulma.styl)                                  | 1:1 Stylus translation of Bulma                                    |
-| [elm-bulma-classes](https://github.com/danielnarey/elm-bulma-classes)              | Bulma prepared for usage with ELM                                  |
-| [Bulma Customizer](https://bulma-customizer.bstash.io/)                            | Bulma Customizer &#8211; Create your own **bespoke** Bulma build   |
-| [Fulma](https://mangelmaxime.github.io/Fulma/)                                     | Wrapper around Bulma for [fable-react](https://github.com/fable-compiler/fable-react)   |
-| [Laravel Enso](https://github.com/laravel-enso/enso)                               | SPA Admin Panel built with Bulma, VueJS and Laravel 			      |
-| [Django Bulma](https://github.com/timonweb/django-bulma)                           | Integrates Bulma with Django 			    |
-| [Bulma Templates](https://github.com/dansup/bulma-templates)                       | Free Templates for Bulma                       |
-| [React Bulma Components](https://github.com/couds/react-bulma-components)          | Another React wrap on React for Bulma.io                           |
-| [purescript-bulma](https://github.com/sectore/purescript-bulma)                    | PureScript bindings for Bulma                                      |
-
-## Copyright and license
-
-Code copyright 2017 Jeremy Thomas. Code released under [the MIT license](https://github.com/jgthms/bulma/blob/master/LICENSE).
+© 2017 Jeremy Thomas. Code released under [the MIT license](https://github.com/jgthms/bulma/blob/master/LICENSE).
