@@ -4,6 +4,9 @@ Changelog
 [Unreleased]
 ------------
 
+[0.6.2] - 2018-03-01
+--------------------
+
 > Target commit:
 > [6078acdd92f250d1c5ab3c512468e228c1b45630](https://github.com/shirohana/bulma.stylus/commit/6078acdd92f250d1c5ab3c512468e228c1b45630)
 > (Tag: [0.6.2](https://github.com/jgthms/bulma/releases/tag/0.6.2))
@@ -19,4 +22,5 @@ Changelog
 [stylus-operator-exponent]: http://stylus-lang.com/docs/operators.html#exponent-
 [stylus-bifs-luminosity]: http://stylus-lang.com/docs/bifs.html#luminositycolor
 
-[Unreleased]: https://github.com/shirohana/bulma.stylus/compare/v0.0.1...dev
+[Unreleased]: https://github.com/shirohana/bulma.stylus/compare/v0.6.2...dev
+[0.6.2]: https://github.com/shirohana/bulma.stylus/releases/tag/v0.6.2
