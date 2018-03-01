@@ -1,0 +1,29 @@
+findColorInvert($color)
+  if luminosity($color) > 0.55
+    return rgba(#000, 0.7)
+  else
+    return #fff
+
+hslify($color)
+  $h = hue($color)
+  $s = saturation($color)
+  $l = lightness($color)
+  return { h: $h, s: $s, l: $l }
+
+adjust-hsl($color, $hue = 0, $saturation = 0, $lightness = 0)
+  $hsl = hslify($color)
+  return hsl(
+    $hsl.h + $hue,
+    $hsl.s + $saturation,
+    $hsl.l + $lightness)
+
+// Sass built-in function used by Bulma
+adjust-hue($color, $angle)
+  return adjust-hsl($color, $hue: $angle)
+
+sass-lighten($color, $amount)
+  return adjust-hsl($color, $lightness: $amount)
+
+sass-darken($color, $amount)
+  return adjust-hsl($color, $lightness: - $amount)
+
