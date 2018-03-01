@@ -4,6 +4,9 @@ Changelog
 [Unreleased]
 ------------
 
+> Target commit:
+> [150a0586c5d4547aac10e89b06399ae1299ae557](https://github.com/shirohana/bulma.stylus/commit/150a0586c5d4547aac10e89b06399ae1299ae557)
+
 [0.6.2] - 2018-03-01
 --------------------
 

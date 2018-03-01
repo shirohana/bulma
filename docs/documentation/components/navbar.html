@@ -20,11 +20,11 @@ doc-subtab: navbar
 {% endcapture %}
 
 {% capture navbar_burger_example %}
-<button class="button navbar-burger">
+<div class="navbar-burger">
   <span></span>
   <span></span>
   <span></span>
-</button>
+</div>
 {% endcapture %}
 
 {% capture navbar_brand_items_example %}
@@ -34,11 +34,11 @@ doc-subtab: navbar
       <img src="{{ site.url }}/images/bulma-logo.png" alt="{{ site.title }}" width="112" height="28">
     </a>
 
-    <button class="button navbar-burger">
+    <div class="navbar-burger">
       <span></span>
       <span></span>
       <span></span>
-    </button>
+    </div>
   </div>
 </nav>
 {% endcapture %}
@@ -478,11 +478,11 @@ doc-subtab: navbar
 {% endcapture %}
 
 {% capture navbar_js_html %}
-<button class="button navbar-burger" data-target="navMenu">
+<div class="navbar-burger" data-target="navMenu">
   <span></span>
   <span></span>
   <span></span>
-</button>
+</div>
 
 <div class="navbar-menu" id="navMenu">
   <!-- navbar-start, navbar-end... -->
@@ -819,7 +819,7 @@ document.addEventListener('DOMContentLoaded', function () {
           {% highlight html %}<nav class="navbar is-fixed-top">{% endhighlight %}
         </li>
         <li>
-          Add the corresponding <code>has-navbar-fixed-top</code> or <code>has-navbar-fixed-bottom</code> modifier to the <code>&lt;html&gt;</code> element to provide the appropriate padding to the page
+          Add the corresponding <code>has-navbar-fixed-top</code> or <code>has-navbar-fixed-bottom</code> modifier to either <code>&lt;html&gt;</code> or <code>&lt;body&gt;</code> element to provide the appropriate padding to the page
           {% highlight html %}<html class="has-navbar-fixed-top">{% endhighlight %}
         </li>
       </ul>
