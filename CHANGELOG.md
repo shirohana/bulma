@@ -5,13 +5,13 @@ Changelog
 ------------
 
 > Target commit:
-> [150a0586c5d4547aac10e89b06399ae1299ae557](https://github.com/shirohana/bulma.stylus/commit/150a0586c5d4547aac10e89b06399ae1299ae557)
+> [150a0586c5d4547aac10e89b06399ae1299ae557](https://github.com/jgthms/bulma/commit/150a0586c5d4547aac10e89b06399ae1299ae557)
 
 [0.6.2] - 2018-03-01
 --------------------
 
 > Target commit:
-> [6078acdd92f250d1c5ab3c512468e228c1b45630](https://github.com/shirohana/bulma.stylus/commit/6078acdd92f250d1c5ab3c512468e228c1b45630)
+> [6078acdd92f250d1c5ab3c512468e228c1b45630](https://github.com/jgthms/bulma/commit/6078acdd92f250d1c5ab3c512468e228c1b45630)
 > (Tag: [0.6.2](https://github.com/jgthms/bulma/releases/tag/0.6.2))
 
 ### Changed
