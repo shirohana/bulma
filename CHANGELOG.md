@@ -5,7 +5,7 @@ Changelog
 ------------
 
 > Target commit:
-> [150a0586c5d4547aac10e89b06399ae1299ae557](https://github.com/jgthms/bulma/commit/150a0586c5d4547aac10e89b06399ae1299ae557)
+> [d4940c3cd33d74373346fddcd96ccb7512e779b9](https://github.com/jgthms/bulma/commit/d4940c3cd33d74373346fddcd96ccb7512e779b9)
 
 [0.6.2] - 2018-03-01
 --------------------
