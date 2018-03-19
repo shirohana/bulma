@@ -27,3 +27,11 @@ sass-lighten($color, $amount)
 sass-darken($color, $amount)
   return adjust-hsl($color, $lightness: - $amount)
 
+relative-dimension($size)
+  $u = unit($size)
+  if $u == '' || $u == unit($body-size)
+    return unit($size, 'rem') / $body-size
+  else
+    return $size / $body-size
+
+r = relative-dimension

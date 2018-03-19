@@ -1,7 +1,7 @@
 @import "initial-variables"
 
 arrow($color)
-  border: 1px solid $color
+  border: (1/$body-size)rem solid $color
   border-right: 0
   border-top: 0
   content: " "
@@ -40,15 +40,15 @@ delete()
   flex-grow: 0
   flex-shrink: 0
   font-size: 0
-  height: 20px
-  max-height: 20px
-  max-width: 20px
-  min-height: 20px
-  min-width: 20px
+  height: (20/$body-size)rem
+  max-height: (20/$body-size)rem
+  max-width: (20/$body-size)rem
+  min-height: (20/$body-size)rem
+  min-width: (20/$body-size)rem
   outline: none
   position: relative
   vertical-align: top
-  width: 20px
+  width: (20/$body-size)rem
   &:before
   &:after
     background-color: $white
@@ -60,11 +60,11 @@ delete()
     transform: translateX(-50%) translateY(-50%) rotate(45deg)
     transform-origin: center center
   &:before
-    height: 2px
+    height: (2/$body-size)rem
     width: 50%
   &:after
     height: 50%
-    width: 2px
+    width: (2/$body-size)rem
   &:hover
   &:focus
     background-color: rgba($black, 0.3)
@@ -72,26 +72,26 @@ delete()
     background-color: rgba($black, 0.4)
   // Sizes
   &.is-small
-    height: 16px
-    max-height: 16px
-    max-width: 16px
-    min-height: 16px
-    min-width: 16px
-    width: 16px
+    height: (16/$body-size)rem
+    max-height: (16/$body-size)rem
+    max-width: (16/$body-size)rem
+    min-height: (16/$body-size)rem
+    min-width: (16/$body-size)rem
+    width: (16/$body-size)rem
   &.is-medium
-    height: 24px
-    max-height: 24px
-    max-width: 24px
-    min-height: 24px
-    min-width: 24px
-    width: 24px
+    height: (24/$body-size)rem
+    max-height: (24/$body-size)rem
+    max-width: (24/$body-size)rem
+    min-height: (24/$body-size)rem
+    min-width: (24/$body-size)rem
+    width: (24/$body-size)rem
   &.is-large
-    height: 32px
-    max-height: 32px
-    max-width: 32px
-    min-height: 32px
-    min-width: 32px
-    width: 32px
+    height: (32/$body-size)rem
+    max-height: (32/$body-size)rem
+    max-width: (32/$body-size)rem
+    min-height: (32/$body-size)rem
+    min-width: (32/$body-size)rem
+    width: (32/$body-size)rem
 
 fa($size, $dimensions)
   display: inline-block
@@ -139,7 +139,7 @@ hamburger($dimensions)
 
 loader()
   animation: spinAround 500ms infinite linear
-  border: 2px solid $border
+  border: (2/$body-size)rem solid $border
   border-radius: $radius-rounded
   border-right-color: transparent
   border-top-color: transparent

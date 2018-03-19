@@ -57,14 +57,14 @@ button-large()
       height: 1.5em
       width: 1.5em
     &:first-child:not(:last-child)
-      margin-left: calc(-0.375em - 1px)
+      margin-left: "calc(-0.375em - %s)" % r(1)
       margin-right: 0.1875em
     &:last-child:not(:first-child)
       margin-left: 0.1875em
-      margin-right: calc(-0.375em - 1px)
+      margin-right: "calc(-0.375em - %s)" % r(1)
     &:first-child:last-child
-      margin-left: calc(-0.375em - 1px)
-      margin-right: calc(-0.375em - 1px)
+      margin-left: "calc(-0.375em - %s)" % r(1)
+      margin-right: "calc(-0.375em - %s)" % r(1)
   // States
   &:hover
   &.is-hovered
@@ -225,7 +225,7 @@ button-large()
       &:not(:last-child)
         border-bottom-right-radius: 0
         border-top-right-radius: 0
-        margin-right: -1px
+        margin-right: r(-1)
       &:last-child
         margin-right: 0
       &:hover

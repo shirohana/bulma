@@ -1,0 +1,10 @@
+// Generic
+html
+  +desktop()
+    font-size: (100vw / ($desktop / $body-size))
+
+// components/modal
+.modal-card
+  +desktop()
+    width: (100% / ($desktop / $modal-content-width))
+    max-height: 96vh

@@ -1,3 +1,7 @@
+// Generic
+
+$body-size ?= 16px
+
 // Colors
 
 $black        ?= hsl(0, 0%, 4%)
@@ -46,7 +50,7 @@ $weight-bold     ?= 700
 // Responsiveness
 
 // The container horizontal gap, which acts as the offset for breakpoints
-$gap ?= 32px
+$gap ?= 2 * $body-size
 // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
 $tablet ?= 769px
 // 960px container + 4rem
@@ -59,9 +63,9 @@ $fullhd ?= 1344px + (2 * $gap)
 // Miscellaneous
 
 $easing         ?= ease-out
-$radius-small   ?= 2px
-$radius         ?= 3px
-$radius-large   ?= 5px
+$radius-small   ?= (2/$body-size)rem
+$radius         ?= (3/$body-size)rem
+$radius-large   ?= (5/$body-size)rem
 $radius-rounded ?= 100vh
 $speed          ?= 86ms
 

@@ -1,4 +1,4 @@
-$panel-item-border ?= 1px solid $border
+$panel-item-border ?= r(1) solid $border
 
 $panel-heading-background-color ?= $background
 $panel-heading-color            ?= $text-strong
@@ -8,7 +8,7 @@ $panel-heading-radius           ?= $radius
 $panel-heading-size             ?= 1.25em
 $panel-heading-weight           ?= $weight-light
 
-$panel-tab-border-bottom              ?= 1px solid $border
+$panel-tab-border-bottom              ?= r(1) solid $border
 $panel-tab-active-border-bottom-color ?= $link-active-border
 $panel-tab-active-color               ?= $link-active
 
@@ -53,7 +53,7 @@ $panel-icon-color ?= $text-light
   justify-content: center
   a
     border-bottom: $panel-tab-border-bottom
-    margin-bottom: -1px
+    margin-bottom: r(-1)
     padding: 0.5em
     // Modifiers
     &.is-active
@@ -93,7 +93,7 @@ label.panel-block
     background-color: $panel-block-hover-background-color
 
 .panel-icon
-  fa(14px, 1em)
+  fa(r(14), 1em)
   color: $panel-icon-color
   margin-right: 0.75em
   .fa

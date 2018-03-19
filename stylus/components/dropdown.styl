@@ -1,8 +1,8 @@
 $dropdown-content-background-color ?= $white
 $dropdown-content-arrow            ?= $link
-$dropdown-content-offset           ?= 4px
+$dropdown-content-offset           ?= r(4)
 $dropdown-content-radius           ?= $radius
-$dropdown-content-shadow           ?= 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1)
+$dropdown-content-shadow           ?= 0 r(2) r(3) rgba($black, 0.1), 0 0 0 r(1) rgba($black, 0.1)
 $dropdown-content-z                ?= 20
 
 $dropdown-item-color                   ?= $grey-dark
@@ -70,5 +70,5 @@ a.dropdown-item
   background-color: $dropdown-divider-background-color
   border: none
   display: block
-  height: 1px
+  height: (1/$body-size)rem
   margin: 0.5rem 0

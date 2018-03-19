@@ -1,5 +1,5 @@
 $navbar-background-color ?= $white
-$navbar-height           ?= 3.25rem
+$navbar-height           ?= 3.25em
 $navbar-fixed-z          ?= 30
 
 $navbar-item-color                   ?= $grey-dark
@@ -15,17 +15,17 @@ $navbar-tab-active-color               ?= $link
 $navbar-tab-active-background-color    ?= transparent
 $navbar-tab-active-border-bottom-color ?= $link
 $navbar-tab-active-border-bottom-style ?= solid
-$navbar-tab-active-border-bottom-width ?= 3px
+$navbar-tab-active-border-bottom-width ?= r(3)
 
 $navbar-dropdown-background-color ?= $white
-$navbar-dropdown-border-top       ?= 1px solid $border
-$navbar-dropdown-offset           ?= -4px
+$navbar-dropdown-border-top       ?= r(1) solid $border
+$navbar-dropdown-offset           ?= r(-4)
 $navbar-dropdown-arrow            ?= $link
 $navbar-dropdown-radius           ?= $radius-large
 $navbar-dropdown-z                ?= 20
 
 $navbar-dropdown-boxed-radius ?= $radius-large
-$navbar-dropdown-boxed-shadow ?= 0 8px 8px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1)
+$navbar-dropdown-boxed-shadow ?= 0 r(8) r(8) rgba($black, 0.1), 0 0 0 r(1) rgba($black, 0.1)
 
 $navbar-dropdown-item-hover-color             ?= $black
 $navbar-dropdown-item-hover-background-color  ?= $background
@@ -98,14 +98,14 @@ navbar-fixed-html()
     min-height: $navbar-height
     width: 100%
   &.has-shadow
-    box-shadow: 0 2px 3px rgba($black, 0.1)
+    box-shadow: 0 r(2) r(3) rgba($black, 0.1)
   &.is-fixed-bottom
   &.is-fixed-top
     navbar-fixed()
   &.is-fixed-bottom
     bottom: 0
     &.has-shadow
-      box-shadow: 0 -2px 3px rgba($black, 0.1)
+      box-shadow: 0 r(-2) r(3) rgba($black, 0.1)
   &.is-fixed-top
     top: 0
 
@@ -163,9 +163,9 @@ a.navbar-link
     flex-grow: 1
     flex-shrink: 1
   &.is-tab
-    border-bottom: 1px solid transparent
+    border-bottom: r(1) solid transparent
     min-height: $navbar-height
-    padding-bottom: calc(0.5rem - 1px)
+    padding-bottom: "calc(0.5rem - %s)" % r(1)
     &:hover
       background-color: $navbar-tab-hover-background-color
       border-bottom-color: $navbar-tab-hover-border-bottom-color
@@ -196,7 +196,7 @@ a.navbar-link
   background-color: $navbar-divider-background-color
   border: none
   display: none
-  height: 1px
+  height: r(1)
   margin: 0.5rem 0
 
 +touch()
@@ -209,7 +209,7 @@ a.navbar-link
       display: flex
   .navbar-menu
     background-color: $navbar-background-color
-    box-shadow: 0 8px 16px rgba($black, 0.1)
+    box-shadow: 0 r(8) r(16) rgba($black, 0.1)
     padding: 0.5rem 0
     &.is-active
       display: block
@@ -221,7 +221,7 @@ a.navbar-link
     &.is-fixed-bottom-touch
       bottom: 0
       &.has-shadow
-        box-shadow: 0 -2px 3px rgba($black, 0.1)
+        box-shadow: 0 r(-2) r(3) rgba($black, 0.1)
     &.is-fixed-top-touch
       top: 0
     &.is-fixed-top
@@ -280,7 +280,7 @@ a.navbar-link
         border-radius: $navbar-dropdown-radius $navbar-dropdown-radius 0 0
         border-top: none
         bottom: 100%
-        box-shadow: 0 -8px 8px rgba($black, 0.1)
+        box-shadow: 0 r(-8) r(8) rgba($black, 0.1)
         top: auto
     &.is-active
     &.is-hoverable:hover
@@ -310,7 +310,7 @@ a.navbar-link
     border-bottom-left-radius: $navbar-dropdown-radius
     border-bottom-right-radius: $navbar-dropdown-radius
     border-top: $navbar-dropdown-border-top
-    box-shadow: 0 8px 8px rgba($black, 0.1)
+    box-shadow: 0 r(8) r(8) rgba($black, 0.1)
     display: none
     font-size: 0.875rem
     left: 0
@@ -337,7 +337,7 @@ a.navbar-link
       opacity: 0
       pointer-events: none
       top: "calc(100% + %s)" % $navbar-dropdown-offset
-      transform: translateY(-5px)
+      transform: "translateY(%s)" % r(-5)
       transition-duration: $speed
       transition-property: opacity, transform
     &.is-right
@@ -359,7 +359,7 @@ a.navbar-link
     &.is-fixed-bottom-desktop
       bottom: 0
       &.has-shadow
-        box-shadow: 0 -2px 3px rgba($black, 0.1)
+        box-shadow: 0 r(-2) r(3) rgba($black, 0.1)
     &.is-fixed-top-desktop
       top: 0
   html.has-navbar-fixed-top-desktop
