@@ -25,17 +25,35 @@ __or__
 yarn add @shirohana/bulma-stylus
 ```
 
+You can also install from GitHub for newest features which are not published yet until the expected
+features was published. (`bulma-stylus` will bump new version only if `bulma` has already published
+the same version)
+
+```sh
+yarn add git://github.com/shirohana/bulma.stylus.git#dev
+```
+
 ## Links
 
 - [📚 Offical documentation](https://bulma.io/documentation/overview/start)
 - [📜 Changelog](CHANGELOG.md)
 
-## Difference between Bulma (module)
+## Difference between Bulma
 
+#### New Feature
+- [\[1\]](#note1) Dynamic rem for better user experience on high resolution displays
+- [\[1\]](#note1) Support 4k container
+
+[![high resolution comparation](docs/images/responsiveness-compare.png)](https://raw.githubusercontent.com/shirohana/bulma.stylus/dev/docs/images/responsiveness-compare.png)
+
+#### Internal
+- [\[1\]](#note1) Use `em/rem` instead `px` in every elements and components
 - Replace `lighten()` function with `sass-lighten()` which implements sass-like `lighten`
 - Replace `darken()` function with `sass-darken()` which implements sass-like `darken`
 - Remove `powerNumber()` function (Use Stylus [`exponent-operator`][stylus-operator-exponent] instead)
 - Remove `colorLuminance()` function (Use Stylus built-in function [`luminosity()`][stylus-bifs-luminosity] instead)
+
+<a id="note1" href="#note1">[1]</a>: _Not published yet_
 
 [stylus-operator-exponent]: http://stylus-lang.com/docs/operators.html#exponent-
 [stylus-bifs-luminosity]: http://stylus-lang.com/docs/bifs.html#luminositycolor
