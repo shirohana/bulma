@@ -1,3 +1,5 @@
+$body-auto-scale ?= false
+
 .container
   margin: 0 auto
   position: relative
@@ -23,3 +25,12 @@
   +from($fullhd)
     max-width: $fullhd - (2 * $gap)
     width: $fullhd - (2 * $gap)
+  // Responsiveness on high-resolution screens
+  if $body-auto-scale is true
+    +from($4k)
+      max-width: $4k - (2 * $gap)
+      width: $4k - (2 * $gap)
+    +until($4k)
+      &.is-4k
+        max-width: $4k - (2 * $gap)
+        width: auto

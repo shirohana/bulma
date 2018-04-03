@@ -1,3 +1,5 @@
+$body-auto-scale ?= true
+
 $body-background-color ?= $white
 $body-size             ?= 16px
 $body-rendering        ?= optimizeLegibility
@@ -28,6 +30,10 @@ html
   overflow-y: scroll
   text-rendering: $body-rendering
   text-size-adjust: 100%
+  // Responsiveness on high-resolution screens
+  if $body-auto-scale is true
+    +desktop()
+      font-size: (100vw / ($desktop / $body-size))
 
 article
 aside

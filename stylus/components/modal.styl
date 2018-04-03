@@ -1,3 +1,5 @@
+$body-auto-scale ?= false
+
 $modal-z ?= 40
 
 $modal-background-background-color ?= rgba($black, 0.86)
@@ -56,6 +58,11 @@ $modal-card-body-padding          ?= r(20)
     margin: 0 auto
     max-height: "calc(100vh - %s)" % $modal-content-spacing-tablet
     width: $modal-content-width
+  // Responsiveness on high-resolution screens
+  if $body-auto-scale is true
+    +desktop()
+      width: (100% / ($desktop / $modal-content-width))
+      max-height: 96vh
 
 .modal-close
   delete()

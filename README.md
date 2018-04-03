@@ -41,10 +41,12 @@ yarn add git://github.com/shirohana/bulma.stylus.git#dev
 ## Difference between Bulma
 
 #### New Feature
-- [\[1\]](#note1) Dynamic rem for better user experience on high resolution displays
+- [\[1\]](#note1) Dynamic rem for better user experience on high-resolution screens
 - [\[1\]](#note1) Support 4k container
 
 [![high resolution comparation](docs/images/responsiveness-compare.png)](https://raw.githubusercontent.com/shirohana/bulma.stylus/dev/docs/images/responsiveness-compare.png)
+
+_Note: You can disable this feature by setting `$body-auto-scale = false` before importing_
 
 #### Internal
 - [\[1\]](#note1) Use `em/rem` instead `px` in every elements and components
