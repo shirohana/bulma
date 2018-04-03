@@ -62,4 +62,4 @@ _Note: You can disable this feature by setting `$body-auto-scale = false` before
 
 ## Inherited copyright and license
 
-© 2017 Jeremy Thomas. Code released under [the MIT license](https://github.com/jgthms/bulma/blob/master/LICENSE).
+© 2018 Jeremy Thomas. Code released under [the MIT license](https://github.com/jgthms/bulma/blob/master/LICENSE).

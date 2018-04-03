@@ -5,7 +5,7 @@ Changelog
 ------------
 
 > Target commit:
-> [d4940c3cd33d74373346fddcd96ccb7512e779b9](https://github.com/jgthms/bulma/commit/d4940c3cd33d74373346fddcd96ccb7512e779b9)
+> [3c29bbdac1e4468c7d537e75720bd16ddc8aa709](https://github.com/jgthms/bulma/commit/3c29bbdac1e4468c7d537e75720bd16ddc8aa709)
 
 ### Added
 - Auto scale `font-size` on high-resolution screens (to disable: `$body-auto-scale = false`)
