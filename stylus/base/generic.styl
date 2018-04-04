@@ -1,4 +1,4 @@
-$body-auto-scale ?= true
+$body-auto-scale ?= $fullhd
 
 $body-background-color ?= $white
 $body-size             ?= 16px
@@ -31,9 +31,9 @@ html
   text-rendering: $body-rendering
   text-size-adjust: 100%
   // Responsiveness on high-resolution screens
-  if $body-auto-scale is true
-    +desktop()
-      font-size: (100vw / ($desktop / $body-size))
+  if $body-auto-scale > 0
+    +from($body-auto-scale)
+      font-size: (100vw / ($body-auto-scale / $body-size))
 
 article
 aside

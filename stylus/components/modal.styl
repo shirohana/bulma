@@ -59,9 +59,9 @@ $modal-card-body-padding          ?= r(20)
     max-height: "calc(100vh - %s)" % $modal-content-spacing-tablet
     width: $modal-content-width
   // Responsiveness on high-resolution screens
-  if $body-auto-scale is true
-    +desktop()
-      width: (100% / ($desktop / $modal-content-width))
+  if $body-auto-scale > 0
+    +from($body-auto-scale)
+      width: (100% / ($body-auto-scale / $modal-content-width))
       max-height: 96vh
 
 .modal-close

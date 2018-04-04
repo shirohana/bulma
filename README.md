@@ -46,7 +46,7 @@ yarn add git://github.com/shirohana/bulma.stylus.git#dev
 
 [![high resolution comparation](docs/images/responsiveness-compare.png)](https://raw.githubusercontent.com/shirohana/bulma.stylus/dev/docs/images/responsiveness-compare.png)
 
-_Note: You can disable this feature by setting `$body-auto-scale = false` before importing_
+_Note: You can disable this feature by setting `$body-auto-scale = false` (default: `$fullhd`) before importing_
 
 #### Internal
 - [\[1\]](#note1) Use `em/rem` instead `px` in every elements and components
