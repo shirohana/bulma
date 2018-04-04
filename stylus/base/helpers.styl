@@ -22,9 +22,9 @@
 // Typography
 
 typography-size($target = '')
-  for $i, $size in $sizes
+  for $size, $i in $sizes
     $suffix = $target == '' ? '' : '-' + $target
-    .is-size-{$i}{$suffix}
+    .is-size-{$i+1}{$suffix}
       font-size: $size !important
 
 typography-size()
