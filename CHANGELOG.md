@@ -4,6 +4,9 @@ Changelog
 [Unreleased]
 ------------
 
+> Target commit:
+> [3f7be4573da0d4584a7fcf25a0427ad59a24a391](https://github.com/jgthms/bulma/commit/3f7be4573da0d4584a7fcf25a0427ad59a24a391)
+
 [0.7.0] - 2018-04-16
 --------------------
 
