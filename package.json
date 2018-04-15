@@ -1,6 +1,6 @@
 {
   "name": "@shirohana/bulma-stylus",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "homepage": "https://bulma.io",
   "author": "Hana Shiro <shirohana0608@gmail.com>",
   "description": "Pure Stylus implementation of Bulma.css with a little changes",
@@ -14,14 +14,13 @@
     "responsive",
     "framework"
   ],
-  "devDependencies": {
-    "autoprefixer": "^7.1.1",
-    "node-sass": "^4.5.3",
-    "postcss-cli": "^4.1.0",
-    "stylus": "^0.54.5"
-  },
+  "files": [
+    "stylus",
+    "bulma.styl",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
-    "postinstall": "rm -rf .editorconfig .gitignore docs yarn.lock",
     "build": "mkdir -p docs/css && npm run build-stylus",
     "build-stylus": "stylus bulma.styl --sourcemap -o docs/css/bulma.css",
     "clean": "rm -rf docs/css",
@@ -31,10 +30,10 @@
     "docs-sass": "node-sass --output-style expanded docs/bulma-docs.sass docs/css/bulma-docs.css",
     "dev": "npm run docs && npm run build-stylus -- --watch"
   },
-  "files": [
-    "stylus",
-    "bulma.styl",
-    "LICENSE",
-    "README.md"
-  ]
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.0",
+    "stylus": "^0.54.5"
+  }
 }

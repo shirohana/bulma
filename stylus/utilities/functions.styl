@@ -1,3 +1,29 @@
+mergeColorMaps($bulma-colors, $custom-colors)
+  $merged-colors = $bulma-colors
+
+  if typeof($custom-colors) == 'object'
+    for $name, $colors in $custom-colors
+      $color = null
+      $color-invert = null
+
+      if typeof($name) == 'string'
+        if isColor($colors)
+          $color = $colors
+          $color-invert = findColorInvert($color)
+        else if typeof($colors) == 'ident' // Typeof zero length ident will return null
+          $color = (isColor($colors[0]) ? $colors[0] : null)
+          if $color != null
+            $color-invert = findColorInvert(isColor($colors[1]) ? $colors[1] : $color)
+
+      if $color != null
+        $merged-colors = merge($merged-colors, { $name: ($color $color-invert) })
+
+  return $merged-colors
+
+isColor($color)
+  $type = typeof($color)
+  return $type == 'rgba' || $type == 'hsla'
+
 findColorInvert($color)
   if luminosity($color) > 0.55
     return rgba(#000, 0.7)
@@ -28,10 +54,9 @@ sass-darken($color, $amount)
   return adjust-hsl($color, $lightness: - $amount)
 
 relative-dimension($size)
-  $u = unit($size)
-  if $u == '' || $u == unit($body-size)
-    return unit($size, 'rem') / $body-size
-  else
-    return $size / $body-size
+  $input-unit = unit($size)
+  $value = $size / ($body-auto-scale > 0 ? $body-size : 1)
+  $unit = ($body-auto-scale > 0 ? 'rem' : ($input-unit == '' ? unit($body-size) : $input-unit))
+  return unit($value, $unit)
 
 r = relative-dimension

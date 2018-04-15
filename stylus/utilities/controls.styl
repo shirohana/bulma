@@ -1,14 +1,16 @@
 $control-radius       ?= $radius
 $control-radius-small ?= $radius-small
 
-$control-padding-vertical   ?= "calc(0.375em - %s)" % (1rem / $body-size)
-$control-padding-horizontal ?= "calc(0.625em - %s)" % (1rem / $body-size)
+$control-border-width ?= r(1)
 
-control()
+$control-padding-vertical   ?= "calc(0.375em - %s)" % $control-border-width
+$control-padding-horizontal ?= "calc(0.625em - %s)" % $control-border-width
+
+$control
   -moz-appearance: none
   -webkit-appearance: none
   align-items: center
-  border: (1/$body-size)rem solid transparent
+  border: $control-border-width solid transparent
   border-radius: $control-radius
   box-shadow: none
   display: inline-flex
@@ -30,6 +32,9 @@ control()
     outline: none
   &[disabled]
     cursor: not-allowed
+
+control()
+  @extend $control
 
 // The controls sizes use mixins so they can be used at different breakpoints
 control-small()

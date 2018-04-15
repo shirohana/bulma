@@ -52,11 +52,11 @@ $tag-delete-margin    ?= r(1)
   padding-right: 0.75em
   white-space: nowrap
   .delete
-    margin-left: 0.25em
-    margin-right: -0.375em
+    margin-left: 0.25rem
+    margin-right: -0.375rem
   // Colors
   for $name, $pair in $colors
-    $color = $pair[0]
+    $color        = $pair[0]
     $color-invert = $pair[1]
     &.is-{$name}
       background-color: $color
@@ -82,8 +82,8 @@ $tag-delete-margin    ?= r(1)
     padding: 0
     position: relative
     width: 2em
-    &:before
-    &:after
+    &::before
+    &::after
       background-color: currentColor
       content: ""
       display: block
@@ -92,10 +92,10 @@ $tag-delete-margin    ?= r(1)
       top: 50%
       transform: translateX(-50%) translateY(-50%) rotate(45deg)
       transform-origin: center center
-    &:before
+    &::before
       height: r(1)
       width: 50%
-    &:after
+    &::after
       height: 50%
       width: r(1)
     &:hover

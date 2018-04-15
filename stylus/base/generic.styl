@@ -13,8 +13,8 @@ $code-padding ?= 0.25em 0.5em 0.25em
 $code-weight  ?= normal
 $code-size    ?= 0.875em
 
-$hr-background-color ?= $border
-$hr-height           ?= r(1)
+$hr-background-color ?= $background
+$hr-height           ?= r(2)
 $hr-margin           ?= 1.5rem 0
 
 $strong-color  ?= $text-strong
@@ -33,7 +33,7 @@ html
   // Responsiveness on high-resolution screens
   if $body-auto-scale > 0
     +from($body-auto-scale)
-      font-size: (100vw / ($body-auto-scale / $body-size))
+      font-size: round(100vw / ($body-auto-scale / $body-size), 4)
 
 article
 aside

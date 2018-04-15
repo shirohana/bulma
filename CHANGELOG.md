@@ -4,15 +4,16 @@ Changelog
 [Unreleased]
 ------------
 
-> Target commit:
-> [3c29bbdac1e4468c7d537e75720bd16ddc8aa709](https://github.com/jgthms/bulma/commit/3c29bbdac1e4468c7d537e75720bd16ddc8aa709)
-
 ### Added
 - Auto scale `font-size` on high-resolution (since `$fullhd`) screens (to disable: `$body-auto-scale = false`)
 - Support 4k container
+- New variable `$4k-enabled`, just like `$widescreen-enabled` and `$fullhd-enabled`
 
 ### Changed
 - Use `em/rem` instead `px` in every elements and components
+
+### Other
+- Add helper function `isColor($color)`
 
 ### Fixed
 - #1 Fix typography helper iteration arguments
