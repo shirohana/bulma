@@ -1,3 +1,5 @@
+$body-auto-scale ?= false
+
 $modal-z ?= 40
 
 $modal-background-background-color ?= rgba($black, 0.86)
@@ -7,15 +9,15 @@ $modal-content-margin-mobile  ?= 20px
 $modal-content-spacing-mobile ?= 160px
 $modal-content-spacing-tablet ?= 40px
 
-$modal-close-dimensions ?= 40px
-$modal-close-right      ?= 20px
-$modal-close-top        ?= 20px
+$modal-close-dimensions ?= (40/$body-size)rem
+$modal-close-right      ?= (20/$body-size)rem
+$modal-close-top        ?= (20/$body-size)rem
 
 $modal-card-spacing ?= 40px
 
 $modal-card-head-background-color ?= $background
-$modal-card-head-border-bottom    ?= 1px solid $border
-$modal-card-head-padding          ?= 20px
+$modal-card-head-border-bottom    ?= r(1) solid $border
+$modal-card-head-padding          ?= r(20)
 $modal-card-head-radius           ?= $radius-large
 
 $modal-card-title-color       ?= $text-strong
@@ -23,10 +25,10 @@ $modal-card-title-line-height ?= 1
 $modal-card-title-size        ?= $size-4
 
 $modal-card-foot-radius     ?= $radius-large
-$modal-card-foot-border-top ?= 1px solid $border
+$modal-card-foot-border-top ?= r(1) solid $border
 
 $modal-card-body-background-color ?= $white
-$modal-card-body-padding          ?= 20px
+$modal-card-body-padding          ?= r(20)
 
 .modal
   overlay()
@@ -56,6 +58,11 @@ $modal-card-body-padding          ?= 20px
     margin: 0 auto
     max-height: "calc(100vh - %s)" % $modal-content-spacing-tablet
     width: $modal-content-width
+  // Responsiveness on high-resolution screens
+  if $body-auto-scale > 0
+    +from($body-auto-scale)
+      width: (100% / ($body-auto-scale / $modal-content-width))
+      max-height: 96vh
 
 .modal-close
   delete()

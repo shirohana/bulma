@@ -1,3 +1,5 @@
+$body-auto-scale ?= $fullhd
+
 $body-background-color ?= $white
 $body-size             ?= 16px
 $body-rendering        ?= optimizeLegibility
@@ -11,8 +13,8 @@ $code-padding ?= 0.25em 0.5em 0.25em
 $code-weight  ?= normal
 $code-size    ?= 0.875em
 
-$hr-background-color ?= $border
-$hr-height           ?= 1px
+$hr-background-color ?= $background
+$hr-height           ?= r(2)
 $hr-margin           ?= 1.5rem 0
 
 $strong-color  ?= $text-strong
@@ -28,6 +30,10 @@ html
   overflow-y: scroll
   text-rendering: $body-rendering
   text-size-adjust: 100%
+  // Responsiveness on high-resolution screens
+  if $body-auto-scale > 0
+    +from($body-auto-scale)
+      font-size: round(100vw / ($body-auto-scale / $body-size), 4)
 
 article
 aside

@@ -1,8 +1,8 @@
 ---
 title: "Bulma is on Patreon!"
 layout: post
-introduction: "Fix your navbar at the top or bottom"
-color: "primary"
+introduction: "Support Bulma's future"
+color: "patreon"
 name: "Bulma on Patreon"
 icon: "patreon"
 icon_brand: true

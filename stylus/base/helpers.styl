@@ -22,9 +22,9 @@
 // Typography
 
 typography-size($target = '')
-  for $i, $size in $sizes
+  for $size, $i in $sizes
     $suffix = $target == '' ? '' : '-' + $target
-    .is-size-{$i}{$suffix}
+    .is-size-{$i+1}{$suffix}
       font-size: $size !important
 
 typography-size()
@@ -57,6 +57,8 @@ $alignments = {
 for $alignment, $text-align in $alignments
   .has-text-{$alignment}
     text-align: $text-align !important
+
+for $alignment, $text-align in $alignments
   +mobile()
     .has-text-{$alignment}-mobile
       text-align: $text-align !important
@@ -72,7 +74,7 @@ for $alignment, $text-align in $alignments
   +desktop()
     .has-text-{$alignment}-desktop
       text-align: $text-align !important
-  +desktop-only
+  +desktop-only()
     .has-text-{$alignment}-desktop-only
       text-align: $text-align !important
   +widescreen()
@@ -105,6 +107,8 @@ for $name, $pair in $colors
     &:hover
     &:focus
       color: sass-darken($color, 10%) !important
+  .has-background-{$name}
+    background-color: $color
 
 for $name, $shade in $shades
   .has-text-{$name}
@@ -141,7 +145,7 @@ for $display in $displays
   +desktop()
     .is-{$display}-desktop
       display: $display !important
-  +desktop-only
+  +desktop-only()
     .is-{$display}-desktop-only
       display: $display !important
   +widescreen()
