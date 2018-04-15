@@ -4,6 +4,13 @@ Changelog
 [Unreleased]
 ------------
 
+[0.7.0] - 2018-04-16
+--------------------
+
+> Target commit:
+> [a25a502481fcba18e9e79c50e6d647e32fd8482c](https://github.com/jgthms/bulma/commit/a25a502481fcba18e9e79c50e6d647e32fd8482c)
+> (Tag: [0.7.0](https://github.com/jgthms/bulma/releases/tag/0.7.0))
+
 ### Added
 - Auto scale `font-size` on high-resolution (since `$fullhd`) screens (to disable: `$body-auto-scale = false`)
 - Support 4k container
@@ -36,5 +43,6 @@ Changelog
 [stylus-operator-exponent]: http://stylus-lang.com/docs/operators.html#exponent-
 [stylus-bifs-luminosity]: http://stylus-lang.com/docs/bifs.html#luminositycolor
 
-[Unreleased]: https://github.com/shirohana/bulma.stylus/compare/v0.6.2...dev
+[Unreleased]: https://github.com/shirohana/bulma.stylus/compare/v0.7.0...dev
+[0.7.0]: https://github.com/shirohana/bulma.stylus/releases/tag/v0.7.0
 [0.6.2]: https://github.com/shirohana/bulma.stylus/releases/tag/v0.6.2
