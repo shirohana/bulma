@@ -4,6 +4,15 @@ Changelog
 [Unreleased]
 ------------
 
+[0.7.0-patch.1] - 2018-04-18
+----------------------------
+
+> Target commit:
+> [b6977cfff8cdc3f3fd630b39efb7f036d5101ed5](https://github.com/jgthms/bulma/commit/b6977cfff8cdc3f3fd630b39efb7f036d5101ed5)
+
+### Fixed
+- Fix mixin calls in `stylus/grid/columns.styl` (#4 by @jzelez)
+
 [0.7.0] - 2018-04-16
 --------------------
 
@@ -23,7 +32,7 @@ Changelog
 - Add helper function `isColor($color)`
 
 ### Fixed
-- #1 Fix typography helper iteration arguments
+- Fix typography helper iteration arguments (#1 by @jzelez)
 
 [0.6.2] - 2018-03-01
 --------------------
@@ -43,6 +52,7 @@ Changelog
 [stylus-operator-exponent]: http://stylus-lang.com/docs/operators.html#exponent-
 [stylus-bifs-luminosity]: http://stylus-lang.com/docs/bifs.html#luminositycolor
 
-[Unreleased]: https://github.com/shirohana/bulma.stylus/compare/v0.7.0...dev
+[Unreleased]: https://github.com/shirohana/bulma.stylus/compare/v0.7.0-patch.1...dev
+[0.7.0-patch.1]: https://github.com/shirohana/bulma.stylus/releases/tag/v0.7.0-patch.1
 [0.7.0]: https://github.com/shirohana/bulma.stylus/releases/tag/v0.7.0
 [0.6.2]: https://github.com/shirohana/bulma.stylus/releases/tag/v0.6.2

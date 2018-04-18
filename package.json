@@ -1,6 +1,6 @@
 {
   "name": "@shirohana/bulma-stylus",
-  "version": "0.7.0",
+  "version": "0.7.0-patch.1",
   "homepage": "https://bulma.io",
   "author": "Hana Shiro <shirohana0608@gmail.com>",
   "description": "Pure Stylus implementation of Bulma.css with a little changes",

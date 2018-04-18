@@ -50,5 +50,32 @@ yarn add @shirohana/bulma-stylus
 [stylus-operator-exponent]: http://stylus-lang.com/docs/operators.html#exponent-
 [stylus-bifs-luminosity]: http://stylus-lang.com/docs/bifs.html#luminositycolor
 
+## Contributing
+
+_Bug fix or improvement only, or you can create an [Issue][issue] for any problem :)_
+
+#### Install dependencies
+```sh
+yarn; cd docs && yarn
+```
+
+#### Test your code
+Ensure there's no error reported
+```sh
+yarn dev
+```
+
+Start documentation server and ensure the page looks in expected
+```sh
+cd docs && docker-compose up
+```
+
+#### Before committing
+```sh
+yarn clean
+```
+
+[issue]: https://github.com/shirohana/bulma.stylus/issues/new
+
 ## Inherited copyright and license
 © 2018 Jeremy Thomas. Code released under [the MIT license](https://github.com/jgthms/bulma/blob/master/LICENSE).

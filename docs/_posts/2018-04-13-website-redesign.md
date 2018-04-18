@@ -7,7 +7,15 @@ name: "Website redesign"
 icon: "star"
 ---
 
-The Bulma website has been widely redesigned!
+The Bulma website has been widely redesigned! There's been a lot of work, to say the least:
+
+<figure>
+  <img src="/images/blog/v7/files.png" alt="files" width="312" height="37">
+  <br>
+  <img src="/images/blog/v7/diff.png" alt="diff" width="167" height="38">
+</figure>
+
+Just see for yourself!
 
 <div class="columns">
   <div class="column">
@@ -26,7 +34,7 @@ The Bulma website has been widely redesigned!
 
 {% include elements/anchor.html name="Navbar" %}
 
-The **navbar** has been updated with a ligther markup and cleaner design:
+The **navbar** has been updated with a lighter markup and cleaner design:
 
 <figure>
   <a href="/images/blog/v7/navbar.png">
@@ -54,7 +62,7 @@ On the homepage, there's a new [**customization** section with a live example](/
   </a>
 </figure>
 
-A **breadcrumb** is not visible at the top of each page, to easily navigate up and down the hierarchy.
+A **breadcrumb** is now visible at the top of each page, to easily navigate up and down the hierarchy.
 
 This has led to the creation of new **intermediate pages**:
 
