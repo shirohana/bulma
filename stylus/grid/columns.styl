@@ -62,7 +62,7 @@ $column-gap ?= 0.75rem
       width: round(percentage($i / 12), 4)
     .columns.is-mobile > &.is-offset-{$i}
       margin-left: round(percentage($i / 12), 4)
-  +mobile
+  +mobile()
     &.is-narrow-mobile
       flex: none
     &.is-full-mobile
@@ -119,7 +119,7 @@ $column-gap ?= 0.75rem
         width: round(percentage($i / 12), 4)
       &.is-offset-{$i}-mobile
         margin-left: round(percentage($i / 12), 4)
-  +tablet
+  +tablet()
     &.is-narrow
     &.is-narrow-tablet
       flex: none
@@ -198,7 +198,7 @@ $column-gap ?= 0.75rem
       &.is-offset-{$i}
       &.is-offset-{$i}-tablet
         margin-left: round(percentage($i / 12), 4)
-  +touch
+  +touch()
     &.is-narrow-touch
       flex: none
     &.is-full-touch
@@ -255,7 +255,7 @@ $column-gap ?= 0.75rem
         width: round(percentage($i / 12), 4)
       &.is-offset-{$i}-touch
         margin-left: round(percentage($i / 12), 4)
-  +desktop
+  +desktop()
     &.is-narrow-desktop
       flex: none
     &.is-full-desktop
@@ -312,7 +312,7 @@ $column-gap ?= 0.75rem
         width: round(percentage($i / 12), 4)
       &.is-offset-{$i}-desktop
         margin-left: round(percentage($i / 12), 4)
-  +widescreen
+  +widescreen()
     &.is-narrow-widescreen
       flex: none
     &.is-full-widescreen
@@ -369,7 +369,7 @@ $column-gap ?= 0.75rem
         width: round(percentage($i / 12), 4)
       &.is-offset-{$i}-widescreen
         margin-left: round(percentage($i / 12), 4)
-  +fullhd
+  +fullhd()
     &.is-narrow-fullhd
       flex: none
     &.is-full-fullhd
