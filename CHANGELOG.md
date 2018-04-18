@@ -7,6 +7,9 @@ Changelog
 > Target commit:
 > [3f7be4573da0d4584a7fcf25a0427ad59a24a391](https://github.com/jgthms/bulma/commit/3f7be4573da0d4584a7fcf25a0427ad59a24a391)
 
+### Fixed
+- Fix mixin calls in `stylus/grid/columns.styl` (#4 by @jzelez)
+
 [0.7.0] - 2018-04-16
 --------------------
 
@@ -26,7 +29,7 @@ Changelog
 - Add helper function `isColor($color)`
 
 ### Fixed
-- #1 Fix typography helper iteration arguments
+- Fix typography helper iteration arguments (#1 by @jzelez)
 
 [0.6.2] - 2018-03-01
 --------------------
