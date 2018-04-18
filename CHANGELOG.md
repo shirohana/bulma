@@ -5,7 +5,7 @@ Changelog
 ------------
 
 > Target commit:
-> [3f7be4573da0d4584a7fcf25a0427ad59a24a391](https://github.com/jgthms/bulma/commit/3f7be4573da0d4584a7fcf25a0427ad59a24a391)
+> [b6977cfff8cdc3f3fd630b39efb7f036d5101ed5](https://github.com/jgthms/bulma/commit/b6977cfff8cdc3f3fd630b39efb7f036d5101ed5)
 
 ### Fixed
 - Fix mixin calls in `stylus/grid/columns.styl` (#4 by @jzelez)
