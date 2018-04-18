@@ -4,6 +4,9 @@ Changelog
 [Unreleased]
 ------------
 
+[0.7.0-patch.1] - 2018-04-18
+----------------------------
+
 > Target commit:
 > [b6977cfff8cdc3f3fd630b39efb7f036d5101ed5](https://github.com/jgthms/bulma/commit/b6977cfff8cdc3f3fd630b39efb7f036d5101ed5)
 
@@ -49,6 +52,7 @@ Changelog
 [stylus-operator-exponent]: http://stylus-lang.com/docs/operators.html#exponent-
 [stylus-bifs-luminosity]: http://stylus-lang.com/docs/bifs.html#luminositycolor
 
-[Unreleased]: https://github.com/shirohana/bulma.stylus/compare/v0.7.0...dev
+[Unreleased]: https://github.com/shirohana/bulma.stylus/compare/v0.7.0-patch.1...dev
+[0.7.0-patch.1]: https://github.com/shirohana/bulma.stylus/releases/tag/v0.7.0-patch.1
 [0.7.0]: https://github.com/shirohana/bulma.stylus/releases/tag/v0.7.0
 [0.6.2]: https://github.com/shirohana/bulma.stylus/releases/tag/v0.6.2
