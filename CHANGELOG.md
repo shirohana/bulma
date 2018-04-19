@@ -4,6 +4,10 @@ Changelog
 [Unreleased]
 ------------
 
+> Target commit:
+> [6d831a7c96e3f1737b7fbdbdcd2e985964995553](https://github.com/jgthms/bulma/commit/6d831a7c96e3f1737b7fbdbdcd2e985964995553)
+> (Tag: [0.7.1](https://github.com/jgthms/bulma/releases/tag/0.7.1))
+
 [0.7.0-patch.1] - 2018-04-18
 ----------------------------
 
