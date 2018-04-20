@@ -1,31 +1,39 @@
-# Bulma Stylus
+Bulma Stylus
+============
 > Pure Stylus implementation of [Bulma.css](https://github.com/jgthms/bulma)
+
+[![npm](https://img.shields.io/npm/v/@shirohana/bulma-stylus.svg)](https://www.npmjs.com/package/@shirohana/bulma-stylus)
+[![downloads](https://img.shields.io/npm/dw/@shirohana/bulma-stylus.svg)](https://www.npmjs.com/package/@shirohana/bulma-stylus)
+[![license](https://img.shields.io/npm/l/@shirohana/bulma-stylus.svg)](https://www.npmjs.com/package/@shirohana/bulma-stylus)
 
 #### Notice! This package is used to integrate Bulma with Stylus, it does NOT includes builded css files.
 
 ![Bulma-Stylus banner](docs/images/bulma-stylus-banner.png)
 
-## Install
+Install
+-------
 _This package version is synchronous with Bulma, every difference between the same version of Bulma
 will be logged in [Changelog](CHANGELOG.md)._
 
-### NPM
+#### NPM
 ```sh
 npm install @shirohana/bulma-stylus
 ```
 
 __or__
 
-### Yarn
+#### Yarn
 ```sh
 yarn add @shirohana/bulma-stylus
 ```
 
-## Links
+Links
+-----
 - [📚 Offical documentation](https://bulma.io/documentation/overview/start)
 - [📜 Changelog](CHANGELOG.md)
 
-## Difference between Bulma
+Difference between Bulma
+------------------------
 - Support 4k container (Disable: `$4k-enabled = false`)
 - All possible floating numbers are round to 4 digits after the period
 
@@ -77,5 +85,6 @@ yarn clean
 
 [issue]: https://github.com/shirohana/bulma.stylus/issues/new
 
-## Inherited copyright and license
+Inherited copyright and license
+-------------------------------
 © 2018 Jeremy Thomas. Code released under [the MIT license](https://github.com/jgthms/bulma/blob/master/LICENSE).
