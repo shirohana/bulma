@@ -5,7 +5,7 @@ Changelog
 ------------
 
 > Target commit:
-> [4e70bd815eec0056ee2735be8c2619e6a13fbef4](https://github.com/jgthms/bulma/commit/4e70bd815eec0056ee2735be8c2619e6a13fbef4)
+> [bf0578090d8b050b5476bff38b970d05d238a3b5](https://github.com/jgthms/bulma/commit/bf0578090d8b050b5476bff38b970d05d238a3b5)
 
 [0.7.1] - 2018-04-20
 --------------------
