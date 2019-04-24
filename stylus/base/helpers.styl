@@ -131,34 +131,34 @@ $displays = 'block' 'flex' 'inline' 'inline-block' 'inline-flex'
 
 for $display in $displays
   .is-{$display}
-    display: $display !important
+    display: unquote($display) !important
   +mobile()
     .is-{$display}-mobile
-      display: $display !important
+      display: unquote($display) !important
   +tablet()
     .is-{$display}-tablet
-      display: $display !important
+      display: unquote($display) !important
   +tablet-only()
     .is-{$display}-tablet-only
-      display: $display !important
+      display: unquote($display) !important
   +touch()
     .is-{$display}-touch
-      display: $display !important
+      display: unquote($display) !important
   +desktop()
     .is-{$display}-desktop
-      display: $display !important
+      display: unquote($display) !important
   +desktop-only()
     .is-{$display}-desktop-only
-      display: $display !important
+      display: unquote($display) !important
   +widescreen()
     .is-{$display}-widescreen
-      display: $display !important
+      display: unquote($display) !important
   +widescreen-only()
     .is-{$display}-widescreen-only
-      display: $display !important
+      display: unquote($display) !important
   +fullhd()
     .is-{$display}-fullhd
-      display: $display !important
+      display: unquote($display) !important
 
 .is-hidden
   display: none !important
