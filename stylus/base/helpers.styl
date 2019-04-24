@@ -62,27 +62,35 @@ for $alignment, $text-align in $alignments
   +mobile()
     .has-text-{$alignment}-mobile
       text-align: $text-align !important
+
   +tablet()
     .has-text-{$alignment}-tablet
       text-align: $text-align !important
+
   +tablet-only()
     .has-text-{$alignment}-tablet-only
       text-align: $text-align !important
+
   +touch()
     .has-text-{$alignment}-touch
       text-align: $text-align !important
+
   +desktop()
     .has-text-{$alignment}-desktop
       text-align: $text-align !important
+
   +desktop-only()
     .has-text-{$alignment}-desktop-only
       text-align: $text-align !important
+
   +widescreen()
     .has-text-{$alignment}-widescreen
       text-align: $text-align !important
+
   +widescreen-only()
     .has-text-{$alignment}-widescreen-only
       text-align: $text-align !important
+
   +fullhd()
     .has-text-{$alignment}-fullhd
       text-align: $text-align !important
@@ -101,61 +109,71 @@ for $alignment, $text-align in $alignments
 
 for $name, $pair in $colors
   $color = $pair[0]
+
   .has-text-{$name}
     color: $color !important
+
   a.has-text-{$name}
     &:hover
     &:focus
       color: sass-darken($color, 10%) !important
+
   .has-background-{$name}
     background-color: $color
 
 for $name, $shade in $shades
   .has-text-{$name}
     color: $shade !important
+
   .has-background-{$name}
     background-color: $shade !important
 
-.has-text-weight-light
-  font-weight: $weight-light !important
-.has-text-weight-normal
-  font-weight: $weight-normal !important
-.has-text-weight-semibold
-  font-weight: $weight-semibold !important
-.has-text-weight-bold
-  font-weight: $weight-bold !important
+$weights ?= light normal semibold bold
+
+for $weight in $weights
+  .has-text-weight-{$weight}
+    font-weight: $weight !important
 
 // Visibility
 
-$displays = 'block' 'flex' 'inline' 'inline-block' 'inline-flex'
+$displays ?= block flex inline inline-block inline-flex
 
 for $display in $displays
   .is-{$display}
     display: $display !important
+
   +mobile()
     .is-{$display}-mobile
       display: $display !important
+
   +tablet()
     .is-{$display}-tablet
       display: $display !important
+
   +tablet-only()
     .is-{$display}-tablet-only
       display: $display !important
+
   +touch()
     .is-{$display}-touch
       display: $display !important
+
   +desktop()
     .is-{$display}-desktop
       display: $display !important
+
   +desktop-only()
     .is-{$display}-desktop-only
       display: $display !important
+
   +widescreen()
     .is-{$display}-widescreen
       display: $display !important
+
   +widescreen-only()
     .is-{$display}-widescreen-only
       display: $display !important
+
   +fullhd()
     .is-{$display}-fullhd
       display: $display !important
