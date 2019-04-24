@@ -116,14 +116,18 @@ for $name, $shade in $shades
   .has-background-{$name}
     background-color: $shade !important
 
-.has-text-weight-light
-  font-weight: $weight-light !important
-.has-text-weight-normal
-  font-weight: $weight-normal !important
-.has-text-weight-semibold
-  font-weight: $weight-semibold !important
-.has-text-weight-bold
-  font-weight: $weight-bold !important
+.has-text-weight
+  &-light
+    font-weight: $weight-light !important
+
+  &-normal
+    font-weight: $weight-normal !important
+
+  &-semibold
+    font-weight: $weight-semibold !important
+
+  &-bold
+    font-weight: $weight-bold !important
 
 // Visibility
 
